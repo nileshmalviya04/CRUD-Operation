@@ -52,7 +52,8 @@ app.get('/users', async (req, res) => {
   }
 });
 
-
+// Give data in the form of json body, including name. 
+// The name in the json body will be used to find and update the existing data.
 app.put('/update/:name', async (req, res) => {
   try {
       const updateData = req.body;
