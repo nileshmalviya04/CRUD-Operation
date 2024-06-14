@@ -63,18 +63,7 @@ app.put('/update/:name', async (req, res) => {
   }
 });
 
-// app.put('/update/:id', async (req, res) => {
-//   try {
-//     const updateData = req.body;
-//     console.log("UpdateDate::", updateData);
-//     const updatedUser = await mongo.update(updateData);
-//     console.log("updatedUser ::", updatedUser );
-//     res.status(200).send({ message: 'User Updated Successfully!', data: updatedUser });
-//     } catch (error) {
-//       console.log('Error Updating User:', error);
-//       res.status(400).send({ message: 'Error updating user!', error: error.message });
-//     }
-// });
+
 
 app.listen(port, () => console.log(`Server listening on port ${port}`));
 
