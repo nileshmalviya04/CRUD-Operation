@@ -67,26 +67,6 @@ class Mongo extends Connection {
         throw error;
       }
     }
-
-  // async update(updateData){
-  //   try {
-  //     console.log("UpdateData::", updateData);
-  //     const { _id, ...updateDataWithoutId} = updateData;
-  //     console.log('ID::', _id);
-  //     if(!_id) {
-  //       throw new Error('Missing id property in update data!');
-  //     }
-  //     const updatedUser = await this.User.findByIdAndUpdate(_id, updateDataWithoutId, { new: true });
-
-  //     if(!updatedUser) {
-  //       throw new Error('User not found');
-  //     }
-  //     return updateData;
-  //   } catch (error) {
-  //     console.error('Error updating user:', error);
-  //     throw error;
-  //   }
-  // }
 }
 
 module.exports = Mongo;
